@@ -11,7 +11,7 @@ disableKinds = ["taxonomy", "term"]
 [params.author]
    # name = "Channel 64 SMP"
    headline = "YouTube Minecraft server focused on friendship, story telling, and building!"
-   image = "img/64logo.png"  # path relative to static directory
+   image = "img/logo.png"  # path relative to static directory
 
   links = [
     # { email = "mailto:hello@your_domain.com" },
@@ -57,7 +57,10 @@ disableKinds = ["taxonomy", "term"]
     # { whatsapp = "https://wa.me/phone-number" },
     # { x = "https://x.com/username" },
      { youtube = "https://www.youtube.com/channel/UCLYbp9evgLFRus2UDKAhNkA" },
-     { link = { href = "https://www.youtube.com/@Aerington", text = "Aerington", icon = "aerington" } } ,
+	 { aerington = { href = "https://www.youtube.com/@Aerington", text = "Aerington", icon = "archi" } } ,
+	 { archi = { href = "https://www.youtube.com/@Aerington", text = "Archi", icon = "aerington" } } ,
+	 { archi = { href = "https://www.youtube.com/@Aerington", text = "Archi", icon = "archi" } } ,
+	 { solid = { href = "https://www.youtube.com/@Aerington", title = "Taco", text = "Archi", icon = "archi" } } ,
   ]
 
 [module]
