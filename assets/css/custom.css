@@ -17,5 +17,21 @@
      );
    }
        .link-solid {
-     background: rgb(0, 0, 0) ;
+     background: rgb(300, 50, 0) ;
+	 height: 7em;
+	 border-radius: 3rem;
+	 border-width: .50rem;
+	 border-style: solid;
+	 border-color: rgb(0, 0, 0) ;
+
+	 color: rgb(0, 0, 0);
+   }
+          .link-transparent {
+     background-color: transparent ;
+	 border-radius: .5rem;
+	 border-width: .25rem;
+	 border-style: solid;
+	 border-color: rgb(255, 255, 255) ;
+
+	 color: rgb(0, 0, 0);
    }

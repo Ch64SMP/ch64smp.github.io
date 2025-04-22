@@ -59,7 +59,7 @@ disableKinds = ["taxonomy", "term"]
      { youtube = "https://www.youtube.com/channel/UCLYbp9evgLFRus2UDKAhNkA" },
 	 { aerington = { href = "https://www.youtube.com/@Aerington", text = "Aerington", icon = "archi" } } ,
 	 { archi = { href = "https://www.youtube.com/@Aerington", text = "Archi", icon = "aerington" } } ,
-	 { archi = { href = "https://www.youtube.com/@Aerington", text = "Archi", icon = "archi" } } ,
+	 { transparent = { href = "https://www.youtube.com/@Aerington", text = "This is an apple", icon = "apple" } } ,
 	 { solid = { href = "https://www.youtube.com/@Aerington", title = "Taco", text = "Archi", icon = "archi" } } ,
   ]
 
