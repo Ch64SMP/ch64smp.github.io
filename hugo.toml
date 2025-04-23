@@ -1,4 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Channel 64 SMP'
-theme = 'lynx' 
+theme = 'lynx'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
