@@ -64,10 +64,10 @@ jobs:
       - name: 🛠️ Build Hugo Site
         run: >
           hugo
-            --gc
-            --minify
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-            --cacheDir "${{ runner.temp }}/hugo_cache"
+          --gc
+          --minify
+          --baseURL "${{ steps.pages.outputs.base_url }}/"
+          --cacheDir "${{ runner.temp }}/hugo_cache"
 
       - name: Save Cache
         id: cache-save
