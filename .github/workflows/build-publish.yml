@@ -40,9 +40,6 @@ jobs:
           tar -xvzf hugo.tar.gz
           sudo mv hugo /usr/local/bin
 
-      - name: 🛠️ Build
-        run: hugo
-
       - name: ✨ Setup GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -55,6 +52,9 @@ jobs:
             ${{ runner.temp }}/hugo_cache
           key: hugo-${{ github.run_id }}
           restore-keys: hugo-
+
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
       - name: Configure Git
         run: git config core.quotepath false

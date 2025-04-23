@@ -10,8 +10,8 @@ disableKinds = ["taxonomy", "term"]
 
 [params.author]
    # name = "Channel 64 SMP"
-   headline = "YouTube Minecraft server focused on friendship, story telling, and building!"
-   image = "img/logo.png"  # path relative to static directory
+   # headline = "YouTube Minecraft server focused on friendship, story telling, and building!"
+   # image = "img/logo.png"  # path relative to static directory
 
   links = [
     # { email = "mailto:hello@your_domain.com" },
@@ -52,12 +52,12 @@ disableKinds = ["taxonomy", "term"]
     # { twitch = "https://twitch.tv/username" },
     # { twitter = "https://twitter.com/username" },
     # { whatsapp = "https://wa.me/phone-number" },
-     { youtubelinks = { href = "https://www.youtube.com/channel/UCLYbp9evgLFRus2UDKAhNkA", text = "YouTube Links", icon = "youtube" } } ,
-	 { twitchlinks = { href = "https://www.youtube.com/@Aerington", text = "Twitch Links", icon = "twitch" } } ,
-     { x = "https://x.com/Channel64Smp" },
-	 { bluesky = "https://bsky.app/profile/channel64smp.bsky.social" },
-	 { spotify = "https://open.spotify.com/show/4vBqfm4EuU6htJOOGZrPPr?si=23951faa0e724bc9" },
-	 { discord = "https://discord.gg/7n8UCMtWrU" },
+    # { youtubelinks = { href = "https://www.youtube.com/channel/UCLYbp9evgLFRus2UDKAhNkA", text = "YouTube Links", icon = "youtube" } } ,
+	  # { twitchlinks = { href = "https://www.youtube.com/@Aerington", text = "Twitch Links", icon = "twitch" } } ,
+    # { x = "https://x.com/Channel64Smp" },
+	  # { bluesky = "https://bsky.app/profile/channel64smp.bsky.social" },
+	  # { spotify = "https://open.spotify.com/show/4vBqfm4EuU6htJOOGZrPPr?si=23951faa0e724bc9" },
+	  # { discord = "https://discord.gg/7n8UCMtWrU" },
   ]
 
 [module]
