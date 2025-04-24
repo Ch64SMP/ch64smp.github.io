@@ -1,7 +1,8 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://ch64smp.github.io/'
 languageCode = 'en-us'
 title = 'Channel 64 SMP'
 theme = 'lynx'
+copyright = "Channel64 SMP"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
