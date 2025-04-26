@@ -58,3 +58,7 @@
     rgba(252, 176, 69, 1) 100%
   );
 }
+
+.link {
+  text-align: left;
+}
