@@ -1,0 +1,20 @@
+<header class="mb-3 flex flex-col items-center">
+  {{ with .Site.Params.Author.image }} {{ $src := . }} {{ $resource :=
+  "" }} {{ if $.Page.Resources.GetMatch $src }} {{ $resource =
+  $.Page.Resources.GetMatch $src }} {{ else if resources.GetMatch $src
+  }} {{ $resource = resources.Get $src }} {{ end }} {{ end }}
+  <h1 class="page-title text-4xl font-extrabold dark:text-white">
+    {{ .Params.title | default .Site.Params.Author.name | default
+    .Site.Title | emojify }}
+  </h1>
+  {{ with .Params.description }}
+  <h2 class="page-description text-xl text-neutral-500 dark:text-neutral-400">
+    {{ . | markdownify | emojify }}
+  </h2>
+  {{ end }}
+  {{ with .Content }}
+  <section class="prose pt-5 dark:prose-invert">
+    {{ . | emojify }}
+  </section>
+  {{ end }}
+</header>
