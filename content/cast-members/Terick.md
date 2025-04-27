@@ -1,6 +1,6 @@
 ---
 title: "TerickTime"
 styleName: terick
-image: "img/Terick.png"
+image: "img/terick.png"
 youtube: "https://www.youtube.com/@TerickTime"
 ---

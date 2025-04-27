@@ -1,6 +1,6 @@
 ---
 title: "Jes7ix"
 styleName: jes
-image: "img/Jes.png"
+image: "img/jes7ix.png"
 youtube: "https://www.youtube.com/@Jes7ix"
 ---

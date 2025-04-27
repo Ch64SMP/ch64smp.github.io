@@ -1,6 +1,6 @@
 ---
 title: "WireDestroyer"
 styleName: wiredestroyer
-image: "img/WireDestroyer.png"
+image: "img/wiredestroyer.png"
 youtube: "https://www.youtube.com/@WireDestroyer"
 ---

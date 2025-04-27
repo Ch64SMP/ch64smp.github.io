@@ -1,6 +1,6 @@
 ---
 title: "Megatronic"
 styleName: mega
-image: "img/Mega.png"
+image: "img/mega.png"
 youtube: "https://www.youtube.com/@megatronic_"
 ---

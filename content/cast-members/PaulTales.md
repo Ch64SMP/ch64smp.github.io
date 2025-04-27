@@ -1,6 +1,6 @@
 ---
 title: "PaulTales"
-styleName: PaulTales
-image: "img/PaulTales.png"
+styleName: paultales
+image: "img/paul.png"
 youtube: "https://www.youtube.com/@PaulTales"
 ---

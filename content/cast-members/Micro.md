@@ -1,6 +1,6 @@
 ---
 title: "MicroPig"
 styleName: micro
-image: "img/Micro.png"
+image: "img/micro.png"
 youtube: "https://www.youtube.com/@micropig5"
 ---
