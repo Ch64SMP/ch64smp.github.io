@@ -2,9 +2,11 @@
 Overide default styles for the website
 */
 @font-face {
-  font-family: 'minecraftia';
-  src: url('../fonts/minecraftia/minecraftia.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/minecraftia/minecraftia.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-family: "minecraftia";
+  src:
+    url("../fonts/minecraftia/minecraftia.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/minecraftia/minecraftia.ttf")
+      format("truetype"); /* Safari, Android, iOS */
 }
 
 html {
@@ -22,7 +24,7 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-h1{
+h1 {
   margin-bottom: 10px;
 }
 
@@ -43,16 +45,16 @@ h1{
 }
 
 /* Tablet */
-@media (min-width:600px) {
+@media (min-width: 600px) {
   .link {
-      padding-left: 25px;
+    padding-left: 25px;
   }
 }
 
 /* Desktop */
-@media (min-width:900px) {
+@media (min-width: 900px) {
   .link {
-      padding-left: 35px;
+    padding-left: 35px;
   }
 }
 
@@ -117,16 +119,16 @@ h1{
 }
 
 /* Tablet */
-@media (min-width:600px) {
+@media (min-width: 600px) {
   .cast-links {
-      padding-left: 25px;
+    padding-left: 25px;
   }
 }
 
 /* Desktop */
-@media (min-width:900px) {
+@media (min-width: 900px) {
   .cast-links {
-      padding-left: 35px;
+    padding-left: 35px;
   }
 }
 
