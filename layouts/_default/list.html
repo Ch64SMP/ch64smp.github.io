@@ -19,19 +19,18 @@
         </li>
         {{ $section := .Section }}
         {{ range where .Site.RegularPages "Section" "cast-members" }}
-          {{ if or (and (eq $section "twitch") .Params.twitch) (eq $section "youtube") }}
-          <li class="flex items-center">
-            <a href="{{ if eq $section "youtube" }}{{ .Params.youtube }}{{ else if eq $section "twitch" }}{{ .Params.twitch }}{{ end }}"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="link cast-links cast-{{ .Params.styleName }} min-w-full rounded py-2 sm:px-24 flex items-center">
-              <span class="mr-1">
-                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="cast-icon" />
-              </span>
-              {{ .Title }}
-            </a>
-          </li>
-          {{ end }}
+        {{ if or (and (eq $section "twitch") .Params.twitch) (eq $section "youtube") }}
+        <li class="flex items-center">
+          <a href="{{ if eq $section " youtube" }}{{ .Params.youtube }}{{ else if eq $section "twitch" }}{{
+            .Params.twitch }}{{ end }}" target="_blank" rel="noopener noreferrer"
+            class="link cast-links cast-{{ .Params.styleName }} min-w-full rounded py-2 sm:px-24 flex items-center">
+            <span class="mr-1">
+              <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="cast-icon" />
+            </span>
+            {{ .Title }}
+          </a>
+        </li>
+        {{ end }}
         {{ end }}
       </ul>
     </article>
