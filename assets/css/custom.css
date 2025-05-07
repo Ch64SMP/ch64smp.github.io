@@ -100,6 +100,22 @@ h1{
   flex-wrap: wrap; /* Allow items to wrap when space is constrained */
 }
 
+@media (prefers-color-scheme: light) {
+  .cast-links {
+    background: white; /* Set a light background for light mode */
+    color: black; /* Ensure text is visible in light mode */
+    border: 6px solid black; /* Keep the border consistent */
+  }
+
+  .cast-icon {
+    border: 2px solid black; /* Optional: Add a border to the icon for better visibility */
+  }
+
+  .cast-title {
+    color: black; /* Ensure the title text is visible in light mode */
+  }
+}
+
 /* Tablet */
 @media (min-width:600px) {
   .cast-links {
