@@ -1,12 +1,18 @@
 /*
 Overide default styles for the website
 */
+@font-face {
+  font-family: 'minecraftia';
+  src: url('../fonts/minecraftia/minecraftia.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/minecraftia/minecraftia.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
 html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   font-family: minecraftia;
   font-weight: normal;
   font-style: normal;
@@ -14,6 +20,20 @@ html {
   font-feature-settings: normal;
   font-variation-settings: normal;
   -webkit-tap-highlight-color: transparent;
+}
+
+h1{
+  margin-bottom: 10px;
+}
+
+.link {
+  width: 60%;
+  margin: 10px auto;
+  padding: 15px;
+  padding-left: 35px;
+  padding-right: 85px;
+  font-size: 21px;
+  text-align: left;
 }
 
 .link-youtubelinks {
@@ -36,12 +56,12 @@ html {
   background-repeat: repeat;
   background-position: right top;
   margin-right: 200px;
-}	
+}
 
 .page-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  padding: 30px;
+  padding: 35px;
   margin-bottom: auto;
 }
 
@@ -61,7 +81,6 @@ html {
 .cast-links {
   background: transparent;
   border: 6px solid black;
-  margin-bottom: 20px;
 }
 
 .cast-aerington {
@@ -92,8 +111,4 @@ html {
     rgba(253, 29, 29, 1) 50%,
     rgba(252, 176, 69, 1) 100%
   );
-}
-
-.link {
-  text-align: left;
 }
