@@ -23,6 +23,21 @@ html {
   background-color: rgb(145, 70, 255);
 }
 
+.link-world-downloads {
+  background-color: rgb(215, 90, 14);
+}
+
+.link-merch {
+  background-color: rgb(215, 90, 14);
+}
+
+.page-background {
+  background-image: "img/youtubestripe.png";
+  background-repeat: repeat;
+  background-position: right top;
+  margin-right: 200px;
+}	
+
 .page-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -44,6 +59,8 @@ html {
 }
 
 .cast-links {
+  background: transparent;
+  border: 6px solid black;
   margin-bottom: 20px;
 }
 

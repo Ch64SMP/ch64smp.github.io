@@ -57,5 +57,6 @@ copyright = "Channel64 SMP"
 	  { bluesky = "https://bsky.app/profile/channel64smp.bsky.social" },
 	  { spotify = "https://open.spotify.com/show/4vBqfm4EuU6htJOOGZrPPr?si=23951faa0e724bc9" },
 	  { discord = "https://discord.gg/7n8UCMtWrU" },
-    { world-downloads = { href = "world-downloads/", text="World Downloads"} },
+    { world-downloads = { href = "world-downloads/", text="World Downloads", icon = "world-downloads" } },
+	{ merch = { href = "https://channel64smp-shop.fourthwall.com", text="Merch", icon = "merch" } },
   ]
