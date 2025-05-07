@@ -1,39 +1,32 @@
 <!doctype html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
-  {{- partial "head.html" . -}}
+{{- partial "head.html" . -}}
 
-  <body
-    class="bg-neutral m-auto flex h-screen max-w-7xl flex-col px-6 text-lg leading-7 text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-white"
-  >
-    <main class="flex-grow">
-      <article
-        class="mt-10 flex h-full flex-col items-center justify-center text-center"
-      >
-        {{- partial "header.html" . -}}
+<body
+  class="bg-neutral m-auto flex h-screen max-w-7xl flex-col px-6 text-lg leading-7 text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-white">
+  <main class="flex-grow">
+    <article class="mt-10 flex h-full flex-col items-center justify-center text-center">
+      {{- partial "header.html" . -}}
 
-        <ul class="w-full">
-          <li class="flex items-center">
-            <!-- Back to Home Link -->
-            <a
-              href="/"
-              class="link cast-links mb-10 min-w-full rounded py-2 text-lg sm:px-24"
-            >
-              &larr; Back
-            </a>
-          </li>
-          {{ range .Pages }}
-          <li class="flex items-center">
-            <a
-              href="{{ .Params.link }}"
-              class="link cast-links cast-{{ .Params.styleName}} min-w-full rounded py-2 sm:px-24 flex items-center"
-            >
-              {{ .Title }}
-            </a>
-          </li>
-          {{ end }}
-        </ul>
-      </article>
-    </main>
-    {{- partial "footer.html" . -}}
-  </body>
+      <ul class="w-full">
+        <li class="flex items-center">
+          <!-- Back to Home Link -->
+          <a href="/" class="link cast-links mb-10 min-w-full rounded py-2 text-lg sm:px-24">
+            &larr; Back
+          </a>
+        </li>
+        {{ range .Pages }}
+        <li class="flex items-center">
+          <a href="{{ .Params.link }}"
+            class="link cast-links cast-{{ .Params.styleName}} min-w-full rounded py-2 sm:px-24 flex items-center">
+            {{ .Title }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </article>
+  </main>
+  {{- partial "footer.html" . -}}
+</body>
+
 </html>
