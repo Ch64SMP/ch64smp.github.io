@@ -26,13 +26,34 @@ h1{
   margin-bottom: 10px;
 }
 
+/* Defaults */
 .link {
+  width: 60%;
   margin: 10px auto;
   padding: 15px;
-  padding-left: 35px;
-  padding-right: 85px;
-  font-size: 21px;
+  padding-left: 15px;
+  padding-right: 70px;
+  font-size: 20px;
   text-align: left;
+  display: flex; /* Use flexbox for proper alignment */
+  align-items: center; /* Vertically align the icon and text */
+  gap: 20px; /* Add spacing between the icon and the text */
+  overflow: hidden; /* Prevent content from overflowing */
+  flex-wrap: wrap; /* Allow items to wrap when space is constrained */
+}
+
+/* Tablet */
+@media (min-width:600px) {
+  .link {
+      padding-left: 25px;
+  }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+  .link {
+      padding-left: 35px;
+  }
 }
 
 .link-youtubelinks {
@@ -61,13 +82,14 @@ h1{
   margin-bottom: 10px;
 }
 
+/* Defaults */
 .cast-links {
   background: transparent;
   border: 6px solid black;
   width: 60%;
   margin: 10px auto;
   padding: 15px;
-  padding-left: 35px;
+  padding-left: 15px;
   padding-right: 70px;
   font-size: 20px;
   text-align: left;
@@ -76,6 +98,20 @@ h1{
   gap: 20px; /* Add spacing between the icon and the text */
   overflow: hidden; /* Prevent content from overflowing */
   flex-wrap: wrap; /* Allow items to wrap when space is constrained */
+}
+
+/* Tablet */
+@media (min-width:600px) {
+  .cast-links {
+      padding-left: 25px;
+  }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+  .cast-links {
+      padding-left: 35px;
+  }
 }
 
 .cast-icon {
