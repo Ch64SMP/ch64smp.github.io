@@ -35,7 +35,7 @@ h1 {
   padding: 15px;
   padding-left: 15px;
   padding-right: 70px;
-  border-radius: 3%;
+  border-radius: 1%;
   font-size: 20px;
   text-align: left;
   display: flex; /* Use flexbox for proper alignment */
