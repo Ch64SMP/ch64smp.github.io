@@ -3,8 +3,7 @@ Overide default styles for the website
 */
 @font-face {
   font-family: "minecraftia";
-  src:
-    url("../fonts/minecraftia/minecraftia.woff") format("woff"),
+  src: url("../fonts/minecraftia/minecraftia.woff") format("woff"),
     /* Pretty Modern Browsers */ url("../fonts/minecraftia/minecraftia.ttf")
       format("truetype"); /* Safari, Android, iOS */
 }
@@ -76,7 +75,7 @@ h1 {
 }
 
 .page-background {
-  background-image: "img/youtubestripe.png";  /* Tried a thing, didn't work */
+  background-image: "img/youtubestripe.png"; /* Tried a thing, didn't work */
   background-repeat: repeat;
   background-position: right top;
   margin-right: 200px;
@@ -105,10 +104,10 @@ h1 {
   .cast-links {
     border: 3px solid white; /* Keep the border consistent */
   }
-  
-    .cast-icon {
+
+  .cast-icon {
     border: 0px solid black; /* Optional: Add a border to the icon for better visibility */
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 1.5); /* Removed outline in favor of shadow */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 1.5); /* Removed outline in favor of shadow */
   }
 
   .bg-neutral {
@@ -126,7 +125,7 @@ h1 {
 
   .cast-icon {
     border: 0px solid black; /* Optional: Add a border to the icon for better visibility */
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Removed outline in favor of shadow */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Removed outline in favor of shadow */
   }
 
   .cast-title {
@@ -163,4 +162,3 @@ h1 {
   min-width: 0; /* Prevent the title from forcing the icon to shrink */
   max-width: 100%; /* Ensure the title doesn't exceed the container width */
 }
-

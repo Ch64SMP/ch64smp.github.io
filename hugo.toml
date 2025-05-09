@@ -2,14 +2,14 @@ baseURL = 'https://ch64smp.github.io/'
 languageCode = 'en-us'
 title = 'Channel 64 SMP'
 theme = 'lynx'
-copyright = "Channel64 SMP"
+copyright = "Channel 64 SMP Server"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
 
 [params.author]
   name = "Channel 64 SMP"
-  headline = "YouTube Minecraft server focused on friendship, story telling, and building!"
+  headline = "."
   image = "img/logo.png"  # path relative to static directory
 
   links = [
