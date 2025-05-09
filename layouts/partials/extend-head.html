@@ -1,0 +1,48 @@
+<script>
+    const splashTexts = [
+        "Welcome to Channel 64 SMP!",
+        "I finally understand!",
+        "I do not understand!",
+        "Hello!?",
+        "That's fair!",
+        "Outerlands or Otherside?",
+        "Heyyyyooooooo!",
+        "The Administration wuz here!",
+        "A server focused on friendship, story telling, and building!"
+    ];
+
+    // Randomly select a splash text from the array
+    const randomIndex = Math.floor(Math.random() * splashTexts.length);
+    const splashText = splashTexts[randomIndex];
+
+    // Wait for the DOM to be fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        // Set the splash text in the HTML element
+        const splashElement = document.getElementById("splash-text");
+        if (splashElement) {
+            splashElement.textContent = splashText;
+        }
+
+        // Function to randomise list elements
+        function randomiseList(ulId) {
+            const ulElement = document.getElementById(ulId);
+            if (ulElement) {
+                const listItems = Array.from(ulElement.children); // Get all <li> elements as an array
+                const filteredItems = listItems.filter(item => item.id !== "back-button"); // Exclude the <li> with ID "back-button"
+                const shuffledItems = filteredItems.sort(() => Math.random() - 0.5); // Shuffle the filtered array
+
+                // Clear the <ul> and append the shuffled <li> elements
+                ulElement.innerHTML = "";
+                shuffledItems.forEach(item => ulElement.appendChild(item));
+
+                // Re-add the excluded <li> with ID "back-button" to the top of the list
+                const backItem = listItems.find(item => item.id === "back-button");
+                if (backItem) {
+                    ulElement.insertBefore(backItem, ulElement.firstChild);
+                }
+            }
+        }
+
+        randomiseList("cast-members");
+    });
+</script>
