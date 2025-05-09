@@ -32,7 +32,7 @@ h1 {
   width: 60%;
   margin: 10px auto;
   padding: 15px;
-  padding-left: 15px;
+  padding-left: 10px;
   padding-right: 70px;
   border-radius: 1%;
   font-size: 20px;
@@ -48,14 +48,15 @@ h1 {
 /* Tablet */
 @media (min-width: 600px) {
   .link {
-    padding-left: 25px;
+    padding-left: 20px;
   }
 }
 
 /* Desktop */
 @media (min-width: 900px) {
   .link {
-    padding-left: 35px;
+    padding-left: 30px;
+    padding-right: 130px;
   }
 }
 
