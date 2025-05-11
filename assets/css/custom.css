@@ -28,6 +28,10 @@ h1 {
   margin-bottom: 10px;
 }
 
+.home-defaults {
+  margin-top: 10px;
+}
+
 /* Animation for the pop effect */
 .pop-animate {
   animation: pop-animate 0.68s infinite;
@@ -118,6 +122,12 @@ h1 {
   margin-bottom: 10px;
 }
 
+.back-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
 /* Defaults */
 .cast-links {
   background: transparent;
@@ -127,6 +137,13 @@ h1 {
   padding-right: 70px;
   font-size: 20px;
   text-align: left;
+}
+
+.cast-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 5%;
+  flex-shrink: 0; /* Prevent the icon from shrinking */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -178,13 +195,6 @@ h1 {
   .cast-links {
     padding-left: 35px;
   }
-}
-
-.cast-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 5%;
-  flex-shrink: 0; /* Prevent the icon from shrinking */
 }
 
 .cast-title {
