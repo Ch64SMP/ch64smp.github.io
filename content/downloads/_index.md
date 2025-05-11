@@ -1,5 +1,5 @@
 ---
-title: "World Downloads"
-description: "Previous Season World Downloads."
+title: "Downloads"
+description: "World Downloads and More!"
 layout: worlds
 ---
