@@ -1,100 +1,102 @@
 <script>
-    const splashTexts = [
-        "Welcome to Channel 64 SMP!",
-        "Heyyyyooooooo!",
-        "The Administration wuz here!",
-        "A server focused on friendship, story telling, and building!",
-		"I'm Ole Bones Jones!",
-		"I am Beta",
-		"I am the Doctor's assistant",
-		"I finally understand...",
-		"Soooooo gooooood!",
-		"Please don't",
-		"I'm dancing!",
-		"Has aybody seen my goat Jasper?",
-		"General Storage Area reporting for duty!",
-		"INFRACTION!",
-		"Peachy Keen Jelly Bean!",
-		"Crazy? I was crazy once...",
-		"That's fair!",
-		"I do not understand.",
-		"HELLO?!",
-		"Time is on our side!",
-		"may contain large phantoms",
-		"Commit science!",
-		"Something something water...",
-		"Meow!",
-		"Guess what color socks I have on today!",
-		"You never can tell with bees now a days...",
-		"RIP Stacy",
-		"Blub",
-		"That's impossible! I swear! It can't be done!",
-		"SpAAaAaaAaace!!!!!",
-		"Made in Swampwater",
-		"Rootadir",
-		"I've got a stick!",
-		"Died by fire",
-		"We are so back!",
-		"DO It",
-		"may contain paperwork",
-		"Write that down Oliver!",
-		"Too much weird stuff going on.",
-		"Your new egg?!",
-		"It looks like you're trying to be a menace, Paul.",
-		"You're listening to 64:16, the Yeti!",
-		"Thank you for tuning into Channel 16:64, the Pendulum.",
-		"may contain beetroot",
-		"Heyyyyooooooo!",
-		"SUBSCRIBE",
-		"Dear Mojang...",
-		"Outlands VS Otherside",
-		"Love You Bye!",
-		"No lack of Lactose!",
-		"The ADMINISTRATION is WATCHING...",
-		"Est. 2021",
-		"The horses in this world are really funny looking...",
-		"Please proceed to the diving platform.",
-		"BEWARE OF WALRUS",
-		"You wouldn't happen to have a spare shirt, would you?",
-		"Have you updated your resource pack?",
-		"Are you tired of watching the same old shows?",
-		"Hidden Gem ;)",
-		"Nukeri Approved!",
-		"Here we go..."
-    ];
+  const splashTexts = [
+    "Welcome to Channel 64 SMP!",
+    "Heyyyyooooooo!",
+    "The Administration wuz here!",
+    "A server focused on friendship, story telling, and building!",
+    "I'm Ole Bones Jones!",
+    "I am Beta",
+    "I am the Doctor's assistant",
+    "I finally understand...",
+    "Soooooo gooooood!",
+    "Please don't",
+    "I'm dancing!",
+    "Has aybody seen my goat Jasper?",
+    "General Storage Area reporting for duty!",
+    "INFRACTION!",
+    "Peachy Keen Jelly Bean!",
+    "Crazy? I was crazy once...",
+    "That's fair!",
+    "I do not understand.",
+    "HELLO?!",
+    "Time is on our side!",
+    "may contain large phantoms",
+    "Commit science!",
+    "Something something water...",
+    "Meow!",
+    "Guess what color socks I have on today!",
+    "You never can tell with bees now a days...",
+    "RIP Stacy",
+    "Blub",
+    "That's impossible! I swear! It can't be done!",
+    "SpAAaAaaAaace!!!!!",
+    "Made in Swampwater",
+    "Rootadir",
+    "I've got a stick!",
+    "Died by fire",
+    "We are so back!",
+    "DO It",
+    "may contain paperwork",
+    "Write that down Oliver!",
+    "Too much weird stuff going on.",
+    "Your new egg?!",
+    "It looks like you're trying to be a menace, Paul.",
+    "You're listening to 64:16, the Yeti!",
+    "Thank you for tuning into Channel 16:64, the Pendulum.",
+    "may contain beetroot",
+    "Heyyyyooooooo!",
+    "SUBSCRIBE",
+    "Dear Mojang...",
+    "Outlands VS Otherside",
+    "Love You Bye!",
+    "No lack of Lactose!",
+    "The ADMINISTRATION is WATCHING...",
+    "Est. 2021",
+    "The horses in this world are really funny looking...",
+    "Please proceed to the diving platform.",
+    "BEWARE OF WALRUS",
+    "You wouldn't happen to have a spare shirt, would you?",
+    "Have you updated your resource pack?",
+    "Are you tired of watching the same old shows?",
+    "Hidden Gem ;)",
+    "Nukeri Approved!",
+    "Here we go...",
+  ];
 
-    // Randomly select a splash text from the array
-    const randomIndex = Math.floor(Math.random() * splashTexts.length);
-    const splashText = splashTexts[randomIndex];
+  // Randomly select a splash text from the array
+  const randomIndex = Math.floor(Math.random() * splashTexts.length);
+  const splashText = splashTexts[randomIndex];
 
-    // Wait for the DOM to be fully loaded
-    document.addEventListener("DOMContentLoaded", function () {
-        // Set the splash text in the HTML element
-        const splashElement = document.getElementById("splash-text");
-        if (splashElement) {
-            splashElement.textContent = splashText;
-        }
+  // Function to randomise list elements
+  function randomiseList(ulId) {
+    const ulElement = document.getElementById(ulId);
+    if (ulElement) {
+      const listItems = Array.from(ulElement.children); // Get all <li> elements as an array
+      const filteredItems = listItems.filter(
+        (item) => item.id !== "back-button",
+      ); // Exclude the <li> with ID "back-button"
+      const shuffledItems = filteredItems.sort(() => Math.random() - 0.5); // Shuffle the filtered array
 
-        // Function to randomise list elements
-        function randomiseList(ulId) {
-            const ulElement = document.getElementById(ulId);
-            if (ulElement) {
-                const listItems = Array.from(ulElement.children); // Get all <li> elements as an array
-                const filteredItems = listItems.filter(item => item.id !== "back-button"); // Exclude the <li> with ID "back-button"
-                const shuffledItems = filteredItems.sort(() => Math.random() - 0.5); // Shuffle the filtered array
+      // Clear the <ul> and append the shuffled <li> elements
+      ulElement.innerHTML = "";
+      shuffledItems.forEach((item) => ulElement.appendChild(item));
 
-                // Clear the <ul> and append the shuffled <li> elements
-                ulElement.innerHTML = "";
-                shuffledItems.forEach(item => ulElement.appendChild(item));
+      // Re-add the excluded <li> with ID "back-button" to the top of the list
+      const backItem = listItems.find((item) => item.id === "back-button");
+      if (backItem) {
+        ulElement.insertBefore(backItem, ulElement.firstChild);
+      }
+    }
+  }
 
-                // Re-add the excluded <li> with ID "back-button" to the top of the list
-                const backItem = listItems.find(item => item.id === "back-button");
-                if (backItem) {
-                    ulElement.insertBefore(backItem, ulElement.firstChild);
-                }
-            }
-        }
+  // Wait for the DOM to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Set the splash text in the HTML element
+    const splashElement = document.getElementById("splash-text");
+    if (splashElement) {
+      splashElement.textContent = splashText;
+    }
 
-        randomiseList("cast-members");
-    });
+    randomiseList("cast-members");
+  });
 </script>
