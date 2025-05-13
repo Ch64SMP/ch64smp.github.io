@@ -33,32 +33,38 @@ h1 {
 
 /* Animation for the pop effect */
 .pop-animate {
-  animation: pop-animate 0.68s infinite;
-  -webkit-animation: pop-animate 0.68s infinite;
+  animation: pop-animate 2s infinite; /* Animation speed and easing */
+  -webkit-animation: pop-animate 2s infinite; /* For older browsers */
 }
 
 @keyframes pop-animate {
-  from {
+  0% {
     transform: scale(0.95);
   }
-  50% {
+  25% {
     transform: scale(1);
   }
-  to {
+  50% {
     transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.95); /* Pause at the end */
   }
 }
 
 /* Safari and older versions of Chrome */
 @-webkit-keyframes pop-animate {
-  from {
-    -webkit-transform: scale(0.95);
+  0% {
+    transform: scale(0.95);
+  }
+  25% {
+    transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1);
+    transform: scale(0.95);
   }
-  to {
-    -webkit-transform: scale(0.95);
+  100% {
+    transform: scale(0.95); /* Pause at the end */
   }
 }
 
