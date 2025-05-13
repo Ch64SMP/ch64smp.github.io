@@ -15,7 +15,11 @@
           <li class="flex items-center">
             <!-- Back to Home Link -->
             <a href="/" class="link cast-links mb-10 min-w-full rounded py-2 text-lg sm:px-24">
-              <img src="{{ "icons/back-arrow.svg" | relURL }}" alt="Go back" class="back-icon" />
+              {{ with "back-arrow"}}
+                <span class="mr-1">
+                  {{ partial "icon.html" . }}
+                </span>
+              {{ end }}
               Go back
             </a>
           </li>
