@@ -140,13 +140,6 @@ h1 {
   background-color: rgb(255, 150, 20);
 }
 
-.page-background {
-  background-image: "img/youtubestripe.png"; /* Tried a thing, didn't work */
-  background-repeat: repeat;
-  background-position: right top;
-  margin-right: 200px;
-}
-
 .page-description {
   margin-bottom: 10px;
 }

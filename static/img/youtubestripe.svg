@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="50" height="1080">
-<path d="M0 0 C16.5 0 33 0 50 0 C50 356.4 50 712.8 50 1080 C33.5 1080 17 1080 0 1080 C0 723.6 0 367.2 0 0 Z " fill="currentColor" transform="translate(0,0)"/>
+<path d="M0 0 C16.5 0 33 0 50 0 C50 356.4 50 712.8 50 1080 C33.5 1080 17 1080 0 1080 C0 723.6 0 367.2 0 0 Z " fill="#ff0000" transform="translate(0,0)"/>
 </svg>
