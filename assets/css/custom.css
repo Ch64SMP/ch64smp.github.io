@@ -33,18 +33,30 @@ h1 {
 
 /* Animation for the pop effect */
 .pop-animate {
-  animation: pop-animate 2s infinite; /* Animation speed and easing */
-  -webkit-animation: pop-animate 2s infinite; /* For older browsers */
+  animation: pop-animate 6s infinite; /* Animation speed and easing */
+  -webkit-animation: pop-animate 6s infinite; /* For older browsers */
 }
 
 @keyframes pop-animate {
   0% {
     transform: scale(0.95);
   }
-  25% {
+  8% {
     transform: scale(1);
   }
-  50% {
+  16% {
+    transform: scale(0.95);
+  }
+  24% {
+    transform: scale(1);
+  }
+  32% {
+    transform: scale(0.95);
+  }
+  40% {
+    transform: scale(1);
+  }
+  48% {
     transform: scale(0.95);
   }
   100% {
@@ -57,10 +69,22 @@ h1 {
   0% {
     transform: scale(0.95);
   }
-  25% {
+  8% {
     transform: scale(1);
   }
-  50% {
+  16% {
+    transform: scale(0.95);
+  }
+  24% {
+    transform: scale(1);
+  }
+  32% {
+    transform: scale(0.95);
+  }
+  40% {
+    transform: scale(1);
+  }
+  48% {
     transform: scale(0.95);
   }
   100% {
@@ -125,6 +149,32 @@ h1 {
 
 .page-description {
   margin-bottom: 10px;
+}
+
+#cast-members li {
+  position: relative;
+  overflow: hidden; /* Ensure the background doesn't overflow */
+}
+
+#cast-members li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%; /* Center the stripe */
+  width: 50px; /* Match the SVG width */
+  height: 100%; /* Stretch the height */
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateX(-50%); /* Center the stripe horizontally */
+  z-index: -2; /* Ensure it is behind the content */
+}
+
+#cast-members.youtube-view li::before {
+  background-image: url("/img/youtubestripe.svg");
+}
+
+#cast-members.twitch-view li::before {
+  background-image: url("/img/twitchstripe.svg");
 }
 
 /* Defaults */
