@@ -10,7 +10,7 @@
     <article class="mt-10 flex h-full flex-col items-center justify-center text-center">
       {{- partial "header.html" . -}}
 
-      <ul id="cast-members" class="w-full">
+      <ul id="cast-members" class="w-full relative {{ if eq .Section "twitch" }}twitch-view{{ else }}youtube-view{{ end }}">
         <li id="back-button" class="flex items-center">
           <!-- Back to Home Link -->
           <a href="/" class="link cast-links mb-10 min-w-full rounded py-2 text-lg sm:px-24">
