@@ -99,7 +99,6 @@ h1 {
   padding: 15px;
   padding-left: 10px;
   padding-right: 70px;
-  border-radius: 1%;
   font-size: 20px;
   text-align: left;
   display: flex; /* Use flexbox for proper alignment */
@@ -128,6 +127,7 @@ h1 {
 .link-youtubelinks {
   background-color: rgb(202, 33, 33);
 }
+
 .link-twitchlinks {
   background-color: rgb(145, 70, 255);
 }
@@ -144,16 +144,17 @@ h1 {
   margin-bottom: 10px;
 }
 
-#cast-members li {
+.background-stripe li {
   position: relative;
-  overflow: hidden; /* Ensure the background doesn't overflow */
+  margin: 0; /* Remove any margin causing gaps */
+  padding: 0; /* Ensure no padding adds to the gap */
 }
 
-#cast-members li::before {
+.background-stripe li::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 80%; /* Center the stripe */
+  left: 85%; /* Position the stripe */
   width: 50px; /* Match the SVG width */
   height: 100%; /* Stretch the height */
   background-repeat: no-repeat;
@@ -162,12 +163,16 @@ h1 {
   z-index: -2; /* Ensure it is behind the content */
 }
 
-#cast-members.youtube-view li::before {
-  background-image: url("/img/youtubestripe.svg");
+.youtube-view li::before {
+  background-image: url("/img/youtube-stripe.svg");
 }
 
-#cast-members.twitch-view li::before {
-  background-image: url("/img/twitchstripe.svg");
+.twitch-view li::before {
+  background-image: url("/img/twitch-stripe.svg");
+}
+
+.downloads-view li::before {
+  background-image: url("/img/downloads-stripe.svg");
 }
 
 /* Defaults */
@@ -210,7 +215,6 @@ h1 {
 
 @media (prefers-color-scheme: light) {
   .cast-links {
-    background: white; /* Set a light background for light mode */
     color: black; /* Ensure text is visible in light mode */
     border: 6px solid black; /* Keep the border consistent */
   }
