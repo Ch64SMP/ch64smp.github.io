@@ -54,7 +54,7 @@ copyright = "Channel 64 SMP Server"
     { youtubelinks = { href = "youtube/", text = "YouTube Links", icon = "youtube" } } ,
 	{ twitchlinks = { href = "twitch/", text = "Twitch Links", icon = "twitch" } } ,
     { x = { href = "https://x.com/Channel64Smp", text = "Twitter/X", icon = "x" } },
-	{ bluesky = "https://bsky.app/profile/channel64smp.bsky.social" },	
+	{ bluesky = "https://bsky.app/profile/channel64smp.com" },	
 	{ merch = { href = "https://channel64smp-shop.fourthwall.com", text="Merch", icon = "merch" } },	
 	{ discord = "https://discord.gg/7n8UCMtWrU" },
 	{ spotify = "https://open.spotify.com/show/4vBqfm4EuU6htJOOGZrPPr?si=23951faa0e724bc9" },
