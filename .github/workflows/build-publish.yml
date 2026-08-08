@@ -48,7 +48,7 @@ jobs:
 
       - name: Cache Restore
         id: cache-restore
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: |
             ${{ runner.temp }}/hugo_cache
@@ -71,7 +71,7 @@ jobs:
 
       - name: Save Cache
         id: cache-save
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         with:
           path: |
             ${{ runner.temp }}/hugo_cache
